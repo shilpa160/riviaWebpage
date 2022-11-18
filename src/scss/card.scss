@@ -1,0 +1,46 @@
+.card-main {
+  display: flex;
+  flex-direction: row;
+  color: black;
+  justify-content: space-between;
+}
+
+.main-div {
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  width: 350px;
+  padding: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+.card-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.apply {
+  margin-left: 20px;
+}
+.apply {
+  .ant-btn {
+    border-radius: 40px;
+    width: 100px;
+    background-color: darkblue;
+  }
+}
+.readmore {
+  .ant-btn {
+    border-radius: 40px;
+    width: 100px;
+  }
+}
+
+.card-content {
+  padding: 5px;
+}
+.card-img {
+  padding: 40px 0;
+}
+.card-desc {
+  color: gray;
+}
