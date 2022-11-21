@@ -5,9 +5,8 @@ import "../App.css";
 import NavBar from "../compoments/header";
 import JobCard from "../compoments/jobCard";
 
-
 function Careers() {
-  const {Content } = Layout;
+  const { Content } = Layout;
   const tempData = [
     {
       img: "https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg",
@@ -51,7 +50,7 @@ function Careers() {
       <Layout>
         <NavBar />
         <div className="main-content">
-          <Content>
+          <Content style={{ padding: "0px 480px" }}>
             <div className="career-title">
               <h1>Careers at Intopros</h1>
               <p className="title-content">
@@ -63,7 +62,7 @@ function Careers() {
             <div className="content-card">
               <Row className="career-row">
                 {tempData.map((data) => (
-                  <Col md={5} offset={4} >
+                  <Col md={5} offset={4}>
                     <JobCard
                       img={data.img}
                       title={data.title}

@@ -2,19 +2,24 @@ import { Card, Button } from "antd";
 import React from "react";
 import "../scss/card.scss";
 
-interface CardProps {
+interface BlogProps {
   img?: string;
   title?: string;
-  content?: string;
+  description?: string;
+  category?: string;
 }
 
-const BlogCard: React.FC<CardProps> = ({ img, title, content }) => (
+const BlogCard: React.FC<BlogProps> = ({
+  img,
+  title,
+  description,
+  category,
+}) => (
   <>
-  <Card 
-   hoverable
-   style={{ width: 200 }}
-  cover={<img src='https://www.webdesignerdepot.com/cdn-origin/uploads/2018/05/featured_ux-1.jpg'/>}
-  />
+    <Card hoverable style={{ width: 300, marginBottom:20 }} cover={<img src={img} />}>
+      <p>{category}</p>
+      <Card.Meta title={title} description={description} />
+    </Card>
   </>
 );
 

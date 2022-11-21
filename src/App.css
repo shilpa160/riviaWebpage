@@ -47,3 +47,12 @@
   white-space: pre-line;
   margin-bottom: 50px;
 }
+.inner-content {
+  display: flex;
+  flex-direction: column;
+  color: red;
+}
+.content-card {
+  display: flex;
+  flex-direction: row;
+}
