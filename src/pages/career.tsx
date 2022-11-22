@@ -50,7 +50,7 @@ function Careers() {
       <Layout>
         <NavBar />
         <div className="main-content">
-          <Content style={{ padding: "0px 480px" }}>
+          <Content >
             <div className="career-title">
               <h1>Careers at Intopros</h1>
               <p className="title-content">
